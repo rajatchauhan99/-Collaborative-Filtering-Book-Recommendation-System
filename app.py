@@ -20,7 +20,7 @@ book_title = book_pivot.index.values
 
 st.title("Book Recommender System")
 
-selected_movie_name = st.selectbox("Select Movie" ,book_title)
+selected_movie_name = st.selectbox("Select Book:" ,book_title)
 
 if st.button("Recommend"):
     recommended_movies = recommed_books(selected_movie_name)
